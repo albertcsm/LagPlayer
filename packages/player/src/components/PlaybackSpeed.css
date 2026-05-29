@@ -1,0 +1,58 @@
+:host {
+  display: none;
+  position: absolute;
+  bottom: 54px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.72);
+  color: #fff;
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  border-radius: 6px;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+  pointer-events: none;
+  min-width: 88px;
+  z-index: 1;
+}
+
+:host(.visible) {
+  display: block;
+  pointer-events: auto;
+}
+
+.title {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 7px 12px 5px;
+}
+
+.preset {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 12px;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.preset:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.preset.active {
+  color: #fff;
+  font-weight: 600;
+}
+
+.preset.active::before {
+  content: '✓ ';
+}

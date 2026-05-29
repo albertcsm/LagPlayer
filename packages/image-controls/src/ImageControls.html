@@ -1,0 +1,88 @@
+<div class="header">
+  <span class="title">Image</span>
+</div>
+<div class="body">
+
+  <canvas class="histogram" width="256" height="63"></canvas>
+
+  <!-- Color correction section -->
+  <div class="section">
+    <div class="section-hdr">
+      <span class="section-title">Color</span>
+      <div class="section-btns">
+        <button class="btn color-cmp-btn" title="Hold to preview without color correction">Compare</button>
+        <button class="btn color-rst-btn">Reset</button>
+      </div>
+    </div>
+    <div class="row">
+      <span class="label">Temp</span>
+      <div class="slider-wrap">
+        <div class="track" style="background: linear-gradient(to right, #7ab8ff, #888 50%, #ffb347)"></div>
+        <input type="range" class="temp-slider" min="-100" max="100" value="0">
+      </div>
+      <span class="value temp-val">0</span>
+    </div>
+    <div class="row">
+      <span class="label">Tint</span>
+      <div class="slider-wrap">
+        <div class="track" style="background: linear-gradient(to right, #4ade80, #888 50%, #e879f9)"></div>
+        <input type="range" class="tint-slider" min="-100" max="100" value="0">
+      </div>
+      <span class="value tint-val">0</span>
+    </div>
+    <div class="row">
+      <span class="label">Sat</span>
+      <div class="slider-wrap">
+        <div class="track" style="background: linear-gradient(to right, #888, #aaa 50%, #f72585)"></div>
+        <input type="range" class="sat-slider" min="-100" max="100" value="0">
+      </div>
+      <span class="value sat-val">0</span>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Levels section -->
+  <div class="section">
+    <div class="section-hdr">
+      <span class="section-title">Levels</span>
+      <div class="section-btns">
+        <button class="btn levels-cmp-btn" title="Hold to preview without levels">Compare</button>
+        <button class="btn levels-rst-btn">Reset</button>
+      </div>
+    </div>
+    <div class="row">
+      <span class="label">Blk</span>
+      <div class="slider-wrap">
+        <div class="track" style="background: linear-gradient(to right, #111, #888)"></div>
+        <input type="range" class="black-slider" min="0" max="100" value="0">
+      </div>
+      <span class="value black-val">0</span>
+    </div>
+    <div class="row">
+      <span class="label">Wht</span>
+      <div class="slider-wrap">
+        <div class="track" style="background: linear-gradient(to right, #777, #fff)"></div>
+        <input type="range" class="white-slider" min="0" max="100" value="100">
+      </div>
+      <span class="value white-val">100</span>
+    </div>
+    <div class="row">
+      <span class="label">Mid</span>
+      <div class="slider-wrap">
+        <div class="track" style="background: linear-gradient(to right, #333, #888 50%, #ccc)"></div>
+        <input type="range" class="mid-slider" min="-100" max="100" value="0">
+      </div>
+      <span class="value mid-val">0</span>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Overall footer -->
+  <div class="footer">
+    <button class="btn all-cmp-btn" title="Hold to preview without any adjustments">⊙ Compare All</button>
+    <button class="btn all-rst-btn">Reset All</button>
+  </div>
+
+</div>

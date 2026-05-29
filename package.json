@@ -1,0 +1,12 @@
+{
+  "name": "lagplayer-workspace",
+  "private": true,
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "dev": "npm run dev -w apps/demo",
+    "test": "npm run test -w packages/player && npm run test -w packages/image-controls",
+    "build": "npm run build -w packages/player && npm run build -w apps/demo",
+    "typecheck": "npm run typecheck -w packages/player && npm run typecheck -w apps/demo",
+    "clean": "npm run clean --workspaces --if-present"
+  }
+}

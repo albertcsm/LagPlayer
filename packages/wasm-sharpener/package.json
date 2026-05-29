@@ -1,0 +1,24 @@
+{
+  "name": "@lagplayer/wasm-sharpener",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./vite-plugin": "./vite-plugin.ts"
+  },
+  "dependencies": {
+    "@lagplayer/player": "*"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.27.31",
+    "typescript": "^5.4.0"
+  },
+  "scripts": {
+    "build:wasm": "asc assembly/index.ts --target release --exportRuntime --runtime stub -o assembly/build/release.wasm --optimizeLevel 3 --shrinkLevel 0 --noAssert",
+    "build": "npm run build:wasm",
+    "clean": "rm -rf assembly/build",
+    "typecheck": "tsc --noEmit"
+  }
+}

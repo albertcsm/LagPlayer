@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.local
+.DS_Store
+.claude/*.local.json
+
+# Local sample videos — drop files into apps/demo/src/assets/ (not committed)
+apps/demo/assets/*
+!apps/demo/assets/.gitkeep

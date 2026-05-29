@@ -1,0 +1,49 @@
+:host {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.72);
+  color: #fff;
+  font-size: 11px;
+  font-family: ui-monospace, 'Cascadia Code', Menlo, monospace;
+  padding: 8px 12px;
+  border-radius: 6px;
+  flex-direction: column;
+  gap: 3px;
+  backdrop-filter: blur(6px);
+  min-width: 180px;
+  pointer-events: none;
+}
+
+:host(.visible) {
+  display: flex;
+}
+
+.section {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.section:first-child {
+  margin-top: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.label {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.val {
+  font-weight: 600;
+  white-space: nowrap;
+}
